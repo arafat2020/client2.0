@@ -20,7 +20,7 @@ const Login = () => {
   const login = () => {
     ctx.setLod(true);
     axios
-      .post(`http://localhost:5000/login`, {
+      .post(`https://mern-chat-server2019.herokuapp.com/login`, {
         email,
         password,
       })

@@ -21,7 +21,7 @@ const Signup = () => {
   const login = () => {
     ctx.setLod(true);
     axios
-      .post(`http://localhost:5000/user`, {
+      .post(`https://mern-chat-server2019.herokuapp.com/user`, {
         name,
         email,
         password,
