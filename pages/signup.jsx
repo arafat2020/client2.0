@@ -8,7 +8,7 @@ import PanToolIcon from "@material-ui/icons/PanTool";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
 import Link from "next/link";
 
-const signup = () => {
+const Signup = () => {
   const ctx = useContext(UserContext);
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -26,8 +26,8 @@ const signup = () => {
         email,
         password,
       })
-        .then((res) => {
-            console.log(res)
+      .then((res) => {
+        console.log(res);
         ctx.setLod(false);
         ctx.setRed(<DoneAllIcon />);
         ctx.setOpen(true);
@@ -101,4 +101,4 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;
